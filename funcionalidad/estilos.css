@@ -7,7 +7,7 @@
 }
 :root{
 	--azul-marino :#273c75;
-	--azul-marino2:#273c75;
+	--azul-marino2:#0c2461;
 	--grisClaro:#f1f2f6;
 	--letra-codigo :'Inconsolata', monospace;
 	--letra-normal:'Montserrat', sans-serif;
@@ -28,35 +28,67 @@ html{
 	box-sizing: border-box;
 	margin-top: 80px;
 	position: relative;
-	float: left;
+	float: right;
+	transition: .2s all;
+}
+.size{
+	width: calc(100% - 300px)!important;
 }
 header{
-	text-transform: uppercase;
 	width: 100%;
 	height: 60px;
+	background: var(--azul-marino);
 	position: fixed;
-	left: 0px;
 	top: 0px;
-	background: var(--azul-marino2);
-	text-align: center;
-	z-index: 1;
+	left: 0px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,.5);
+	z-index: 2;
+	line-height: 60px;
+	padding-left: 50px;
+	font-size: 40px;
+	color: white;
 }
-	header>ul{
+header>i:hover{
+	cursor: pointer;
+}
+.visible{
+	left: 0px;
+}
+nav{
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	left: -300px;
+	top: 60px;
+	background: var(--azul-marino);
+	z-index: 1;
+	transition: .3s all;
+}
+	nav>ul{
+		margin:0px !important;
 		width: 100%;
-		background: red;
+		height: 100%;
 	}
-	header>ul>a{
+	nav>ul>a{
+		width: 100%;
+		height: 50px;
+		margin-bottom: 20px;
+		padding: 0px 50px;
+		box-sizing: border-box;
 		position: relative;
 		float: left;
 		text-decoration: none;
 		color: white;
 		list-style: none;
-		padding: 0px 10px;
-		line-height: 40px;
+		line-height: 50px;
 		cursor: pointer;
 	}
-	header a:hover{
+	nav>ul>a>li>i{
+		margin-right: 8px;
+	}
+	nav a:hover{
 		font-weight: 600;
+		background: var(--azul-marino2);
 	}
 /*=========== TEXTOS ==========*/
 /*=========== TEXTOS ==========*/
