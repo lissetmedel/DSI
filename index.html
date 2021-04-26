@@ -1,95 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WINDOW</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+	<title>DESARROLLO DE SISTEMAS DE INTERNET</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<script src="funciones.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
-	<header>
-		<ul>
-			<a href="#window"><li>window</li></a>
-			<a href="#DOM"><li>DOM</li></a>
-			<a href="#onclick"><li>onclick</li></a>
-			<a href="#gebi"><li>getelementbyid</li></a>
-		</ul>
-	</header>
-	
-	<div id="window" class="contenedor">
-		<h1>WINDOW</h1>
-		<p>Window es el objeto raiz de nuestro navegador el cual proporciona métodos para controlarlo</p>
-		<p>Y este se divide como se muestra en la siguiente imagen:</p>
-		<img src="img/window.png">
-	</div>
-	
-	<div class="contenedor gris" id="DOM">
-		<h1>DOM</h1>
-		<h3>Document Object Model</h3>
-		<br>
-		<p>El objeto <b>document</b> da acceso al contenido de la página y con él podemos cambiar o crear cualquier cosa en la página, por ejemplo:</p>
-		<ul>
-			<li>El color del fondo de la página</li>
-			<li>El tamaño del texto</li>
-			<li>La tipografía</li>
-			<li>etc...</li>
-		</ul>
-		<br>
-		<p>La estructura de un documento HTML son las <b>etiquetas</b>. <br>Según el <b>DOM</b>, cada etiqueta es un objeto</p>
-		<p>El DOM representa HTML como una estructura de <b>árbol</b> de etiquetas, donde cada etiqueta es un <b>nodo</b> y puede tener más etiquetas dentro que serían sus <i>hijos</i>. Por ejemplo, la etiqueta <<i>html</i>> está en la raíz del documento y esta tiene como hijos a la etiqueta <i>head</i> y a la etiqueta <i>body</i></p>
-		<p>El DOM nos permite hacer cualquier cosa con sus elementos, pero para poder hacerlo es necesario primero llegar al objeto correspondiente en el DOM</p>
-		<p>En el siguiente fragmento de código se cambia el color del fondo accediendo a body y modificando sus estilos con le método <i>style</i></p>
-		<div class="codigo">
-			<p><u>document</u>.body.style.background <b>=</b> <b class="azul">"</b><s>red</s><b class="azul">"</b>;</p>
-		</div>
-		<sup>Ejemplo en JavaScript</sup>
-	</div>
-
-	<div class="contenedor" id="onclick">
-		<h1>Evento onclick</h1>
-		<p>Este evento permite que al dar clic a un elemento en la interfaz se ejecute una función</p>
-		<p>A continuación un ejemplo de cómo agregar el evento <b>onclick</b> en un elemento <i>HTML</i> que mandará llamar la función <i>colores()</i>:</p>
-		<div class="codigo">
-			<p><b class="azul"><</b><i>button </i><u>onclick</u>=<b class="azul">"</b><s>colores</s>()<b class="azul">"></b>Da clic para cambiar el color<b class="azul"><</b><b class="azul">/</b><i>button</i><b class="azul">></b></p>
-		</div>
-		<sup>Ejemplo en HTML</sup><br>
-		<br>
-
-		<p>Implementación del botón:</p>
-		<button onclick="colores()">Color</button><br><br>
-
-		<div class="codigo">
-			<p><i>function</i> <b class="azul">colores</b>(){</p>
-			<p><sub></sub><u>Alert</u>(<b class="azul">"</b><s>Esta función más delante cambiará los colores</s><b class="azul">"</b>);</p>
-			<p>}</p>
-		</div>
-		<sup>ejemplo en JS</sup>
-	</div>
-	
-	<div class="contenedor gris" id="gebi">
-		<h1>getElementById</h1>
-		<p>Para buscar elementos en un documento podemos usar distintos métodos, en este caso veremos el método <i>getElementById(id)</i> el cuál puede localizar cualquier elemento del documento que contenga un id específico</p>
-		<p>En el siguiente video se mostrará cómo implementarlo</p>
-		<video src="img/getElementById.mp4" controls="true"></video>
-
-		<h3>Ejemplo del video:</h3><br><br>
-		
-		<label>Ancho:</label><input type="number" id="ancho">
-		<label>Alto:</label><input type="number" id="alto">
-		<label>Color:</label><input type="color" id="color">
-
-		<button onclick="crear()" class="espacio">Crear</button>
-
-		<div id="cuadrado" class="espacio margen-arriba"></div>
-	</div>
-
+	<h1>desarrollo de <br>sistemas de internet</h1>
+	<section>
+		<a href="maquetado/index.html"><div class="tema" id="h">
+			<h2>HTML</h2>
+		</div></a>
+		<a href="estilos/index.html"><div class="tema" id="c">
+			<h2>CSS</h2>
+		</div></a>
+		<a href="funcionalidad/index.html"><div class="tema" id="j">
+			<h2>JS</h2>
+		</div></a>
+	</section>
 </body>
 </html>
-
-
-
-
-
