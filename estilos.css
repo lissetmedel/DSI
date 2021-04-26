@@ -1,0 +1,197 @@
+/*======== GENERALES =======*/
+/*======== GENERALES =======*/
+/*======== GENERALES =======*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+:root{
+	--azul-marino :#273c75;
+	--azul-marino2:#273c75;
+	--grisClaro:#f1f2f6;
+	--letra-codigo :'Inconsolata', monospace;
+	--letra-normal:'Montserrat', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+.gris{
+	background: var(--grisClaro);
+}
+
+/*======== CONTENEDORES =======*/
+/*======== CONTENEDORES =======*/
+/*======== CONTENEDORES =======*/
+.contenedor{
+	width: 100%;
+	padding: 50px 100px;
+	box-sizing: border-box;
+	margin-top: 80px;
+	position: relative;
+	float: left;
+}
+header{
+	text-transform: uppercase;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: var(--azul-marino2);
+	text-align: center;
+	z-index: 1;
+}
+	header>ul{
+		width: 100%;
+		background: red;
+	}
+	header>ul>a{
+		position: relative;
+		float: left;
+		text-decoration: none;
+		color: white;
+		list-style: none;
+		padding: 0px 10px;
+		line-height: 40px;
+		cursor: pointer;
+	}
+	header a:hover{
+		font-weight: 600;
+	}
+/*=========== TEXTOS ==========*/
+/*=========== TEXTOS ==========*/
+/*=========== TEXTOS ==========*/
+h1{
+	color: var(--azul-marino);
+	text-align: center;
+	font-family: var(--letra-normal);
+	font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+h3{
+	color: var(--azul-marino2);
+	font-size: 30px;
+	text-align: center;
+}
+p{
+	font-weight: 200;
+	font-family: var(--letra-normal);
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+ul{
+	margin: 10px 50px;
+	font-family: var(--letra-normal);
+}
+sup{
+	color: #718093;
+	font-family: var(--letra-normal);
+	font-size: 13px;
+	margin-left: 10px;
+}
+sub{
+	margin-left: 35px;
+}
+label{
+	width: 100px;
+	position: relative;
+	float: left;
+	text-align: right;
+	margin-right: 5px;
+	margin-left: 10px;
+}
+/*======== INTERACTIVOS =======*/
+/*======== INTERACTIVOS =======*/
+/*======== INTERACTIVOS =======*/
+img{
+	height: 400px;
+	position: relative;
+	float: left;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: 50px;
+}
+button{
+	font-family: var(--letra-normal);
+	height: 35px;
+	background: #fbc531;
+	border: none;
+	border-radius: 20px;
+	line-height: 38px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--azul-marino);
+	font-weight: 600;
+	padding: 0px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-right: 2px solid #e1b12c;
+	border-bottom: 3px solid #e1b12c;
+}
+button:active{
+	border-right: 0px;
+	border-bottom: 0px;
+	transform: translateY(3px); 
+}
+
+input{
+	height: 30px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: 1px solid #dfe4ea;
+	position: relative;
+	float: left;
+}
+video{
+	width: 90%;
+	position: relative;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 50px;
+}
+.espacio{
+	margin-left: 50px;
+}
+.margen-arriba{
+	margin-top: 50px;
+}
+
+
+
+
+
+/*======= CÓDIGO =======*/
+.codigo{
+	background: #2f3640;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+	.codigo>p{
+		color: white;
+		font-family: 'Inconsolata', monospace;
+		font-weight: 500;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.codigo i{
+		color: #ED4C67;
+	}
+	.codigo b{
+		color:#f0932b;
+	}
+	.azul{
+		color: #22a6b3 !important;
+	}
+	s{
+		color: #C4E538;
+		text-decoration: none;
+	}
+	u{
+		color: #9980FA;
+		text-decoration: none;
+	}
+
+
