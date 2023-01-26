@@ -112,6 +112,10 @@ p{
 	font-size: 20px;
 	margin-bottom: 15px;
 }
+	b{
+		font-weight: 400;
+		color: #22a6b3;
+	}
 ul{
 	margin: 10px 50px;
 	font-family: var(--letra-normal);

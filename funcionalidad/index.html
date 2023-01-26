@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WINDOW</title>
+	<title>JavaScript</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<script src="funciones.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -17,13 +17,110 @@
 	<nav id="menu">
 		<ul>
 			<a href="../index.html"><li><i class="fas fa-home"></i>Inicio</li></a>
+			<a href="#quees"><li><i class="fas fa-home"></i>¿Qué es?</li></a>
+			<a href="#como"><li><i class="fas fa-home"></i>¿Cómo funciona?</li></a>
+			<a href="#escript"><li><i class="fas fa-home"></i>La etiqueta SCRIPT</li></a>
+			<a href="#variables"><li><i class="fas fa-home"></i>Variables</li></a>
 			<a href="#window"><li><i class="fab fa-js-square"></i>window</li></a>
 			<a href="#DOM"><li><i class="fab fa-js-square"></i>DOM</li></a>
 			<a href="#onclick"><li><i class="fab fa-js-square"></i>onclick</li></a>
 			<a href="#gebi"><li><i class="fab fa-js-square"></i>getElementById</li></a>
 		</ul>
 	</nav>
-	
+	<div id="quees" class="contenedor">
+		<h1>¿QUÉ ES?</h1>
+		<p>Es un lenguaje de programación interpretado y orientado a eventos que fue crado para dar vida a las páginas web. Los programas en este lenguaje se llaman <i>scripts</i>, se pueden escribir directamente en el HTML de una página web y se ejecutan automáticamente a medida que se carga la página.</p>
+
+		<p>JavaScript nace a partir de una navegador que actualmente no existe: <b>NetScape</b> en 1995 por Brendan Eich. Inicialmente fue llamado "<b>LiveScript</b>" y para darle popularidad en ese momento se cambió a <b>JavaScript</b> haciéndolo ver como el hermano menor de JAVA</p>
+	</div>
+
+	<div id="como" class="contenedor gris">
+		<h1>¿CÓMO FUNCIONA?</h1>
+		<p>JavaScript puede ejecutarse en cualquier dispositivo que cuente con un programa llamado "<b>motor o intérprete</b>", el navegador tiene un motor <i>embebido</i> llamado "Máquina virtual de JavaScript"</p>
+		<p>Existen diferentes motores, entre los más populares se encuentra:</p>
+		<ul>
+			<li>V8 para Chrome, Opera y Edge</li>
+			<li>SpiderMonkey para Firefox</li>
+			<li>Chakra para IE</li>
+			<li>Entre otros</li>
+		</ul>
+		<p>Básicamente lo que hace el motor es leer y analizar el script, luego "<i>compilarlo</i>" a lenguaje máquina que éste por último se ejecuta muy rápidamente</p>
+	</div>
+
+	<div id="escript" class="contenedor">
+		<h1>LA ETIQUETA <i>SCRIPT</i></h1>
+		<p>Los progrmas de JavaScript se pueden insertar en casi cualquier parte de un documento HTML con el uso de la etiqueta <<i>script</i>>. Por ejemplo:</p>
+
+		<div class="codigo">
+			<p><b class="azul"><</b><i>html</i><b class="azul">></b></p>
+			<p><b class="azul"><</b><i>body</i><b class="azul">></b></p>
+			<p>&nbsp;&nbsp;&nbsp;<b class="azul"><</b><i>p</i><b class="azul">></b>Antes del script...<b class="azul"><</b><b class="azul">/</b><i>p</i><b class="azul">></b></p>
+			<p>&nbsp;&nbsp;&nbsp;<b class="azul"><</b><i>script</i><b class="azul">></b></p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>alert</u>(<s>'Hola mundo'</s>);</p>
+			<p>&nbsp;&nbsp;&nbsp;<b class="azul"><</b><b class="azul">/</b><i>script</i><b class="azul">></b></p>
+			<p>&nbsp;&nbsp;&nbsp;<b class="azul"><</b><i>p</i><b class="azul">></b>Después del script...<b class="azul"><</b><b class="azul">/</b><i>p</i><b class="azul">></b></p>
+			<p><b class="azul"><</b><b class="azul">/</b><i>body</i><b class="azul">></b></p>
+			<p><b class="azul"><</b><b class="azul">/</b><i>html</i><b class="azul">></b></p>
+		</div>
+		<sup>Ejemplo en HTML</sup>
+		<br><br><br>
+		<p>Si el código de JavaScript que queremos agregar a nuestro HTML es un montón, entonces es preferible crear un archivo separado de tipo <b>.js</b> y adjuntarlo al HTML con el atributo <b><i>SRC</i></b></p>
+
+		<div class="codigo">
+			<p><b class="azul"><</b><i>script</i> src=<s>"funciones/fun.js"</s><b class="azul">></b><b class="azul"><</b><b class="azul">/</b><i>script</i><b class="azul">></b></p>
+		</div>
+		<sup>Ejemplo en HTML</sup>
+
+		<p>La ventaja de un archivo separado es que el navegador lo descarga y lo almacena en <i>caché</i>, y cuando otras páginas hacen referencia al mismo, solo lo tienen que tomar de la chaché sin tener que descargarlo de nuevo, lo que reduce el tráfico y hace que las páginas sean más rápidas.</p>
+
+		<br><br><p><u>**Mostrar una alerta con un JS interno y uno externo</u></p>
+		<p><u>**ver sublime</u></p>
+	</div>
+
+	<div id="variables" class="contenedor gris">
+		<h1>VARIABLES</h1>
+		<p>Una varibale es un almacén con un nombre para guardar datos. Para generar una variable en JavaScript, se usa la palabra clave <i>let</i></p>
+		<p>Una variable debe ser declarada solamente una vez, ya que una declaración doble o repetida es un error.</p>
+		<p>Existen dos limitantes al momento de definir el nombre de una variable en JavaScript</p>
+		<ul>
+			<li>El nombre únicamente puede incluir letras, dígitos o los símbolos $ y _</li>
+			<li>El primer caracter no puede ser un dígito</li>
+		</ul>
+		<p>Cuando el nombre de una variable contiene varias palabras, se suele usar el estilo <b>camelCase</b> donde las palabras van pegadas una detrás de la otra, con cada inicial en mayúscula: <b>miNombreCompleto</b></p>
+
+		<p>Declarar una variable:</p>
+		<div class="codigo">
+			<p><b>let</b> msj;</p>
+		</div>
+		<sup>Ejemplo en JavaScript</sup>
+
+		<br><br><p>Asignando datos:</p>
+		<div class="codigo">
+			<p><b>let</b> msj;</p>
+			<p>msj<i>=</i><s>'Hola'</s>;</p>
+		</div>
+		<sup>Ejemplo en JavaScript</sup>
+
+		<br><br><p>Mostramos el dato de la variable:</p>
+		<div class="codigo">
+			<p><b>let</b> msj;</p>
+			<p>msj<i>=</i><s>'Hola'</s>;</p>
+			<p><u>alert</u>(msj);</p>
+		</div>
+		<sup>Ejemplo en JavaScript</sup>
+
+		<br><br><p>Además es importante hacer la aclaración de que variables con nombres fonéticamente iguales pueden ser distintos dependiendo de cómo se escribieron, es decir la variable "<i>manzana</i>" y la variable "<i>MANZANA</i>" son <b>distintas</b></p>
+
+		<p>También existen algunos nombres de variables que no se pueden utilizar, ya que son palabras reservadas del lenguaje.</p>
+
+		<p><u>**Investiga la lista de palabras reservadas de JavaScript</u></p>
+		<p><u>**ver sublime</u></p>
+		<!-- let, class, return y function -->
+
+
+	</div>
+
+<!-- ======================================= -->
 	<div id="window" class="contenedor">
 		<h1>WINDOW</h1>
 		<p>Window es el objeto raiz de nuestro navegador el cual proporciona métodos para controlarlo</p>
